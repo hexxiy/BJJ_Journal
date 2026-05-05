@@ -1,0 +1,250 @@
+.meals {
+  padding: 1rem 0;
+}
+
+.meals h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.meal-windows {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.meal-windows button {
+  padding: 0.5rem 1rem;
+  border: 2px solid #667eea;
+  background: white;
+  color: #667eea;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.meal-windows button.active,
+.meal-windows button:hover {
+  background: #667eea;
+  color: white;
+}
+
+.add-food {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+}
+
+.add-food h3 {
+  margin: 0 0 1rem 0;
+  color: #333;
+}
+
+.common-foods {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.food-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.food-item:hover {
+  background: #e9ecef;
+}
+
+.food-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.food-info strong {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.serving {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.food-macros {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.toggle-custom {
+  width: 100%;
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border: 2px dashed #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #666;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.toggle-custom:hover {
+  border-color: #667eea;
+  color: #667eea;
+}
+
+.custom-food-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.custom-food-form input {
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.custom-food-form button {
+  grid-column: span 2;
+  padding: 0.6rem;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.current-meal {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+}
+
+.current-meal h3 {
+  margin: 0 0 1rem 0;
+  color: #333;
+}
+
+.meal-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.meal-item button {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.meal-total {
+  padding: 0.75rem;
+  background: #667eea;
+  color: white;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.save-meal {
+  width: 100%;
+  padding: 0.75rem;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.today-meals {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.today-meals h3 {
+  margin: 0 0 1rem 0;
+  color: #333;
+}
+
+.saved-meal {
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.meal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meal-header h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.meal-time {
+  font-size: 0.8rem;
+  color: #999;
+  font-weight: normal;
+  margin-left: 0.5rem;
+}
+
+.delete-btn {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.saved-meal p {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.empty {
+  text-align: center;
+  color: #999;
+  padding: 2rem;
+}

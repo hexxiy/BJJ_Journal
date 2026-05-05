@@ -1,0 +1,221 @@
+.exercises {
+  padding: 1rem 0;
+}
+
+.exercises h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.exercise-summary {
+  margin-bottom: 1.5rem;
+}
+
+.summary-card {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 1.5rem;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+}
+
+.summary-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.big-number {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.summary-card p {
+  margin: 0.5rem 0 0 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.add-exercise {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+}
+
+.add-exercise h3 {
+  margin: 0 0 1rem 0;
+  color: #333;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.filter-buttons button {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.3s;
+}
+
+.filter-buttons button.active {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+.exercise-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.exercise-option {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 0.8rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 2px solid transparent;
+}
+
+.exercise-option:hover {
+  background: #e9ecef;
+}
+
+.exercise-option.selected {
+  border-color: #667eea;
+  background: #e7e9ff;
+}
+
+.ex-name {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.ex-cals {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.custom-exercise {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.custom-exercise input {
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.duration-input {
+  margin: 1rem 0;
+}
+
+.duration-input label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.duration-input input {
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100px;
+}
+
+.cal-preview {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background: #e7e9ff;
+  border-radius: 6px;
+  color: #667eea;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.save-exercise {
+  width: 100%;
+  padding: 0.75rem;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.save-exercise:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.today-exercises {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.today-exercises h3 {
+  margin: 0 0 1rem 0;
+  color: #333;
+}
+
+.exercise-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.exercise-info h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.exercise-info p {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.delete-btn {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.empty {
+  text-align: center;
+  color: #999;
+  padding: 2rem;
+}
